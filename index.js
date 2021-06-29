@@ -7,14 +7,15 @@ const axios = require("axios");
 // ];
 
 p1 = axios.get("https://google.com");
+p2 = axios.get("http://badurl.asdf");
 
-p2 = axios({
-  method: "get",
-  url: "http://badurl.asdf",
-  timeout: 1000 * 2, // Wait for 2 seconds before giving up
-}).catch(() => {
-  return "error";
-});
+// p2 = axios({
+//   method: "get",
+//   url: "http://badurl.asdf",
+//   timeout: 1000 * 2, // Wait for 2 seconds before giving up
+// }).catch(() => {
+//   return "error";
+// });
 
 p3 = axios.get("https://amazon.com");
 
